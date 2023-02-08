@@ -7,6 +7,7 @@ const GoogleAuth = (props) => {
     window.gapi.load("client:auth2", () => {
       window.gapi.client
         .init({
+          // CLient Id is read from the environment variables
           clientId: process.env.REACT_APP_CLIENT_ID,
           scope: "email",
           plugin_name: "streamy",
