@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Streams - FrontEnd
+
+App for creating streams with user being authenticated using google auth.
+
+Tech used in App:
+
+- Google Auth
+- REACT
+- REDUX
+- REDUX-THUNK
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
