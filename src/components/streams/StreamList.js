@@ -29,6 +29,9 @@ const StreamList = (props) => {
 
   const renderStreamsList = () => {
     return props.streams.map((stream) => {
+      if (props.currentUserId !== stream.userId) {
+        return null;
+      }
       return (
         <div key={stream.id} className="item">
           {renderAdmin(stream)}
@@ -37,7 +40,9 @@ const StreamList = (props) => {
             <Link to={`/streams/show/${stream.id}`} className="header">
               {stream.title}
             </Link>
-            <div className="description">{stream.description}</div>
+            <div className="description">
+              Id: {stream.id} | {stream.description}
+            </div>
           </div>
         </div>
       );
