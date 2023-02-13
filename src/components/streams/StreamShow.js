@@ -30,11 +30,37 @@ const StreamShow = () => {
   }, []);
 
   return (
-    <div>
-      <video ref={videoRef} style={videoStyle} controls={true} />
-      <h1>{title}</h1>
-      <h3>{description}</h3>
-    </div>
+    <>
+      <div>
+        <video ref={videoRef} style={videoStyle} controls={true} />
+        <h1>{title}</h1>
+        <h3>{description}</h3>
+      </div>
+      <hr />
+
+      {/* ADD COPY TAGS FOR STREAM LINKS */}
+      {/* <div className="ui action input container">
+        <label className="ui red horizontal label">Put this link in OBS</label>
+        <input type="text" value="rtmp://localhost/live" />
+        <button className="ui teal right labeled icon button">
+          <i className="copy icon"></i>
+          Copy
+        </button>
+      </div>
+      <div className="ui action input container">
+        <label className="ui red horizontal label">Put this ID in OBS</label>
+        <input type="text" value="rtmp://localhost/live" />
+        <button
+          onClick={() => {
+            navigator.clipboard.writeText(this.state.textToCopy);
+          }}
+          className="ui teal right labeled icon button"
+        >
+          <i className="copy icon"></i>
+          Copy
+        </button>
+      </div> */}
+    </>
   );
 };
 

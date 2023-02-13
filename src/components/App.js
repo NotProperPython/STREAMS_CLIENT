@@ -9,8 +9,9 @@ import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 
 const App = () => {
+  const style = { backgroundColor: "#e1e2e3", opacity: "0.8" };
   return (
-    <div className="ui container">
+    <div className="ui container" style={style}>
       <BrowserRouter>
         <Header />
         <Routes>
