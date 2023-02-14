@@ -11,6 +11,15 @@ Tech used in App:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Prerequisites
+
+**Please make sure that you have the 2 other GIT projects up and running in the background before running this one.**
+
+Those 2 things are:
+
+- [STREAMS_API](https://github.com/NotProperPython/STREAMS_API)
+- [STREAMS_RMTP_SERVER](https://github.com/NotProperPython/STREAMS_RTMP_SERVER)
+
 ## Available Scripts
 
 In the project directory, you can run:
